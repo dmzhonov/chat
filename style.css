@@ -1,0 +1,43 @@
+body {
+	background-image: url('pics/chat-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+form {
+	padding-top: 375px;
+	padding-left: 5px;
+}
+
+#chatwindow {
+	position: absolute;
+	margin-left: 30.5%;
+	margin-top: 1.5%;
+	background-color: #fff;
+	width: 748px;
+	height: 417px;
+}
+
+#header {
+	position: absolute;
+	margin: auto;
+	background-color: #195da6;
+	width: 748px;
+	height: 50px;
+	font-size: small;
+}
+
+#header h5, p {
+	padding-left: 279px;
+	color: #fff;
+}
+
+#header h5 {
+	padding-top: 3px;
+	margin: auto;
+}
+
+#send {
+	width: 15px;
+	height: 15px;
+}
