@@ -1,9 +1,11 @@
 <?php
 class Chat {
-	public $tableName = 'messages';
+	public $tableName = 'chat';
 
 	// подключение к БД
 	public function __construct() {
+		$link = mysqli_connect("localhost", "croot", "", "dmzh");
+		mysqli_query($link, "SET NAMES 'utf8'");
 	}
 
 	public function newMessage($text = '') {
@@ -12,6 +14,7 @@ class Chat {
 
 		// записать в бд
 		$sql = "INSERT INTO ".$this->tableName." VALUES('".$text."', ".time().")";
+		mysqli_query($link, $query) or die (mysqli_error($link));
 
 		return $result;
 	}
